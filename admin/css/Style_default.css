@@ -1,0 +1,69 @@
+body{ margin:0px auto; text-align:center; font-family:"宋体", Verdana, Arial; font-size:12px; line-height:24px; color:#000000;}
+th{ font-family:"宋体", Verdana, Arial; font-size:12px; line-height:24px; color:#000000;}
+tr{ font-family:"宋体", Verdana, Arial; font-size:12px; line-height:24px; color:#000000;}
+td{ font-family:"宋体", Verdana, Arial; font-size:12px; line-height:24px; color:#000000;}
+input{ font-family:"宋体", Verdana, Arial; font-size:12px; line-height:18px; color:#333333;}
+a:link { font-family:"宋体", Verdana, Arial; font-size:12px; line-height:24px; color:#000000; text-decoration: none; }
+a:visited { font-family:"宋体", Verdana, Arial; font-size:12px; line-height:24px; color:#000000; text-decoration: none; }
+a:hover { font-family:"宋体", Verdana, Arial; font-size:12px; line-height:24px; color:#2f78bf; text-decoration:underline; }
+
+.Top_bg{ background:url(../Images/Img_top_bg.gif) repeat-x; height:70px; text-align:center;
+}
+.Menu_bg{ background:url(../Images/Img_top_menu_bg.gif) repeat-x; height:34px; text-align:center;
+}
+.h1{ height:1px;
+}
+.h5{ height:5px;
+}
+.h10{ height:10px;
+}
+.List_bg_01{ border-left:#2f78bf 1px solid;  border-bottom:#2f78bf 1px solid;  border-right:#2f78bf 1px solid; padding:5px 5px 5px 5px; text-align:center; background-color:#f6fbff;
+}
+.List_bg_02{ border-left:#cc050c 1px solid;  border-bottom:#cc050c 1px solid;  border-right:#cc050c 1px solid; padding:10px 5px 10px 5px; text-align:center;
+}
+.List_bg_03{ border-left:#cccccc 1px solid;  border-bottom:#cccccc 1px solid;  border-right:#cccccc 1px solid; padding:5px 5px 8px 5px; text-align:center; ;
+}
+.Register_bg{ border:#2f78bf 1px solid;padding:20px 20px 20px 20px; text-align:center; background-color:#f6fbff;
+}
+.Img_border{ border:#dddddd 3px solid;
+}
+
+
+A.White_title_font:link{  font-family:"宋体", Verdana, Arial; font-size:14px; font-weight:bold; line-height:24px; color:#000000; text-decoration: none;}
+A.White_title_font:visited{  font-family:"宋体", Verdana, Arial; font-size:14px; font-weight:bold; line-height:24px; color:#000000; text-decoration: none;}
+A.White_title_font:hover{  font-family:"宋体", Verdana, Arial; font-size:14px; font-weight:bold; line-height:24px; color:#000000; text-decoration: none;}
+
+A.Blue_font:link{color:#1b518e;font-size:12px; font-family:"宋体",Verdana, Arial; line-height:24px; text-decoration:underline;
+}
+A.Blue_font:visited{color:#1b518e;font-size:12px; font-family:"宋体",Verdana, Arial; line-height:24px;text-decoration:underline;
+}
+A.Blue_font:hover{color:#ff6600;font-size:12px; font-family:"宋体",Verdana, Arial; line-height:24px;text-decoration:none;
+}
+
+A.chakan_font:link{color:#333333;font-size:12px; font-family:"宋体",Verdana, Arial; line-height:24px; text-decoration:underline;
+}
+A.chakan_font:visited{color:#333333;font-size:12px; font-family:"宋体",Verdana, Arial; line-height:24px;text-decoration:underline;
+}
+A.chakan_font:hover{color:#ff6600;font-size:12px; font-family:"宋体",Verdana, Arial; line-height:24px;text-decoration:none;
+}
+
+.Title_01_font{ font-family:"宋体", Verdana, Arial; font-size:14px; font-weight:bold; line-height:24px; color:#ffffff;
+}
+.Title_03_font{ font-family:"宋体", Verdana, Arial; font-size:14px; font-weight:bold; line-height:24px; color:#333333;
+}
+.Title_04_font{ font-size:14px; font-weight:bold; color:#ffffff; padding-left:5px; padding-right:20px; padding-top:2px; background:url(../Images/Img_title_04_center.gif) repeat-x;
+}
+.Title_05_font{ font-size:14px; font-weight:bold; color:#ffffff; padding-left:5px; padding-right:20px; padding-top:2px; background:url(../Images/Img_title_05_center.gif) repeat-x;
+}
+.Title_06_font{ font-size:14px; font-weight:bold; color:#ffffff; padding-left:5px; padding-right:20px; padding-top:2px; background:url(../Images/Img_title_06_center.gif) repeat-x;
+}
+
+.Title_red_font{ font-size:14px; font-weight:bold; color:#ff0000; 
+}
+
+.New_font{ font-size:16px; font-weight:bold; line-height:32px;
+}
+.menber_font{ font-size:12px; line-height:24px; color:#999999;
+}
+.red_font{ font-weight:bold; color:#ff0000; }
+.blue_font{ font-weight:bold; color:#2f78bf; }

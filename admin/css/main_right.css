@@ -1,0 +1,100 @@
+BODY {
+	 FONT-SIZE: 12px; BACKGROUND: #fff;  MARGIN: 0px auto; COLOR: #000;  
+}
+
+DIV {
+	border-width: 0px;
+    padding: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+SPAN {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+P {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+A IMG {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px	
+}
+
+
+TABLE {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px
+}
+TH
+{
+    text-align:center; line-height:30px; font-weight:bold; color:#135067; font-size:12px; background-color:#b5deef;
+}
+A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+
+
+#mainbody { width:98%; margin-left:8px;
+}
+#right_table { width:100%; border:#acd0e0 1px solid;
+}
+#Headline { FONT-WEIGHT: bold; FONT-SIZE: 16px; WIDTH: 100%; TEXT-ALIGN: center; height:30px; margin-top:5px;
+}
+.Title{ text-align:center; line-height:30px; font-weight:bold; color:#135067; font-size:12px; background-color:#b5deef;
+}
+.list {
+	COLOR: #333; LINE-HEIGHT: 26px ; height:26px; background-color:#f1fbfd;
+}
+.list  A {
+	COLOR: #333; TEXT-DECORATION: underline;
+}
+.list_left{ COLOR: #333; LINE-HEIGHT: 26px ; height:26px; padding-right:10px; background-color:#f1fbfd; text-align:right;
+}
+TD.forumRow {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; font-family:¡°ËÎÌå¡±; BACKGROUND: #f1fbfd; line-height:26px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; 
+}
+.tableBorder {
+     WIDTH: 100%;  BACKGROUND-COLOR: #ffffff
+}
+.piliang { width:100%; float:left; margin-left:8px; margin-top:15px; margin-bottom:15px;
+}
+.Textbox {	font-size: 12px; color: #333333; text-decoration: none; background-color: #FFFFFF; border: 1px solid #bbbbbb; 
+}
+
+
+#mainbody02 { width:98%; margin-left:8px;
+}
+#right_table02 { width:100%; border:#acd0e0 1px solid;
+}
+
+.title02{ width:100%; text-align:center; line-height:30px; font-weight:bold; color:#135067; font-size:12px; background-color:#b5deef;
+}
+
+.list_left02
+{
+   width :20%;border:#ffffff 1px solid; COLOR: #333; LINE-HEIGHT: 26px ; height:26px; padding-right:10px;margin:0 auto; background-color:#f1fbfd; float:left; text-align:right; position:inherit;
+}
+.list02 {
+	width :79%;border:#ffffff 1px solid; COLOR: #333; LINE-HEIGHT: 26px ; height:26px; padding-left:10px;  background-color:#f1fbfd;  float:left; position:inherit;
+}
+INPUT {
+	border-width: 1px;
+    FONT-SIZE: 12px;
+	margin-right: 0px;
+}
+TEXTAREA {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+
+#search{WIDTH:100%; height:28px; margin:8px 0px 8px 0px; }
+.search_left{width:1%; height:28px; float:left; background:url(../images/img_search_left.gif);}
+.search_center{width:96%; height:28px; float:left;  background:url(../images/img_search_center.gif);}
+ 

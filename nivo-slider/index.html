@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html lang="zh-cn">
+<head>
+    <title>Nivo Slider Demo</title>
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://dreamsky.github.io/main/blog/common/init.css">
+    <style>
+    .slider-wrapper {
+        width: 700px;
+        /* width: 80%; */
+        margin-top: 150px;
+    }
+    .top-banner{
+        background-color: #333;
+    }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img src="images/toystory.jpg" data-thumb="images/toystory.jpg" alt="" />
+                <a href="http://dev7studios.com"><img src="images/up.jpg" data-thumb="images/up.jpg" alt="" title="This is an example of a caption" /></a>
+                <img src="images/walle.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+                <img src="images/nemo.jpg" data-thumb="images/nemo.jpg" alt="" title="#htmlcaption" />
+            </div>
+            <div id="htmlcaption" class="nivo-html-caption">
+                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+            </div>
+        </div>
+        <div class="footer-banner" style="width:728px; margin:0 auto"></div>
+    </div>
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            effect: 'random', //Specify sets like: 'fold,fade,sliceDown'
+            slices: 15,
+            animSpeed: 500, //Slide transition speed
+            pauseTime: 3000,
+            startSlide: 0, //Set starting Slide (0 index)
+            directionNav: true, //Next & Prev
+            directionNavHide: true, //Only show on hover
+            controlNav: false, //1,2,3...
+            controlNavThumbs: false, //Use thumbnails for Control Nav
+            controlNavThumbsFromRel: false, //Use image rel for thumbs
+            controlNavThumbsSearch: '.jpg', //Replace this with...
+            controlNavThumbsReplace: '_thumb.jpg', //...this in thumb Image src
+            keyboardNav: true, //Use left & right arrows
+            pauseOnHover: true, //Stop animation while hovering
+            manualAdvance: false, //Force manual transitions
+            captionOpacity: 0.8, //Universal caption opacity
+            beforeChange: function () { },
+            afterChange: function () { },
+            slideshowEnd: function () { } //Triggers after all slides have been shown
+        });
+    });
+    </script>
+    <script src="http://dreamsky.github.io/main/blog/common/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+j.add('insertcode', {requires: ['dialog'],init: function(l){l.addCommand('insertcode', new a.dialogCommand('insertcode'));l.ui.addButton('insertcode', {label: l.lang.insertcode.toolbar,command: 'insertcode',icon: this.path + 'images/code.jpg'});a.dialog.add('insertcode', this.path + 'dialogs/insertcode.js');}});
+i.toolbar_Basic=
+,'insertcode'

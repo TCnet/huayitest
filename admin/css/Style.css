@@ -1,0 +1,8 @@
+#Header {  background:url(../images/top_img_bg.gif) repeat-x left; height:96px; margin:0px auto;}
+#top_img { width:410px; height:96px; margin:0px ; float:left; position:absolute; z-index:1;  }
+#top_img02 { width:593px;height:96px;  float:right; position:inherit; z-index:1; }
+#top_time {  position:absolute;z-index:1;width:160px;z-index:1;  right:-3px; *right:-5px; top:71px; color:#ffffff; font-size:12px; }
+
+a.black_link:link { font-size: 12px; line-height: 24px; color: #fff; text-decoration: none; }
+a.black_link:visited { font-size: 12px; line-height: 24px; color: #fff; text-decoration: none;}
+a.black_link:hover { font-size: 12px; line-height: 24px; color: #fff; text-decoration: underline;}

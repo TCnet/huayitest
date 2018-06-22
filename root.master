@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" Inherits="HuaYimo.root" %>
+<%@ Register Src="~/uc/uc_footer.ascx" TagName="uc_footer" TagPrefix="uc_footer" %>
+<!DOCTYPE html>
+<html lang="en" class=" ">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <meta name="Author" content="www.nbtcnet.com" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/icon.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.js"></script>
+    <!-- App -->
+    <script src="js/app.js"></script>
+    <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="js/appear/jquery.appear.js"></script>
+    <script src="js/landing.js"></script>
+    <script src="js/app.plugin.js"></script>
+    <script src="js/addFavorite.js"></script>
+    <script type="text/javascript">
+        function getsearch() {
+            var s =$('#tbkey').val();
+            window.location.href = "search.aspx?key=" + s;
+        }
+
+        function KeyDown() {
+            if (event.keyCode == 13) {
+                event.returnValue = false;
+                event.cancel = true;
+                getsearch();
+            }
+        }
+
+       
+    </script>
+</head>
+
+
+<body>
+    <form id="form1" runat="server" data-validate="parsley">
+        <!-- header -->
+        <header id="header" class="navbar bg-white">
+            <div class="container hidden-xs"  >
+                <div class="header-info">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <div class="m-t-sm">
+                               <a onclick="javascript:addFavorite();" href="#" class="btn btn-link btn-xs"> <i class="fa fa-star-o"></i>&nbsp;收藏</a>
+                                <a href="admin/Default.aspx" class="btn btn-link btn-xs" style="padding: 0 1px 0 0;"><i class="fa fa-user"></i>&nbsp;管理</a>
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row ">
+
+                    <div class="col-md-8" style="padding-top: 10px; ">
+                        <button class="btn  btn-blue navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a href="Default.aspx" class="navbar-brand m-r-lg hidden-xs">
+                            <img src="images/logo.png"></a>
+                         <a href="Default.aspx" class="navbar-brand m-r-lg visibale-xs hidden-sm hidden-md hidden-lg">
+                            <img src="images/logo2.png" style="width: 190px;"></a>
+                        <img src="images/by.png" class="hidden-xs" />
+                    </div>
+
+
+                    <div class="col-md-4 hidden-xs">
+                     
+                            <div class="form-group">
+                                <div class="input-group m-b">
+                                    <input onchange="tokenizeJavaScript:getsearch();" onkeydown="KeyDown()" type="text" id="tbkey" class="form-control input-rounded " placeholder="搜索关键词">
+                                    <span class="input-group-btn">
+                                        <button  onclick="tokenizeJavaScript:getsearch();" class="btn btn-default  btn-rounded  btn-primary btn-blue" type="button"><i class="fa fa-chevron-right"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                       
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class=" ">
+                <asp:ContentPlaceHolder ID="menu" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+
+
+        </header>
+        <!-- / header -->
+        <section id="content" class="bg-white">
+
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </section>
+        <div>
+        </div>
+        <uc_footer:uc_footer ID="uc_footer" runat="server"></uc_footer:uc_footer>
+
+    </form>
+
+
+</body>
+</html>
+

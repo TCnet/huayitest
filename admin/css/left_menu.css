@@ -1,0 +1,36 @@
+BODY {
+	 FONT-SIZE: 12px; BACKGROUND: #fff;  MARGIN: 0px auto; COLOR: #000;  
+}
+
+A {
+	COLOR: #000; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+
+#sidebar {	WIDTH: 163px; background-color:#C8E8F7; padding:5px 1px 5px 1px; float:left; 
+}
+.list{ background:url(../images/left_sub_01.gif) no-repeat left; width:161px; height:26px; margin-top:2px; margin-left:1px;color:#135067;font-size:12px; height:26px; padding-left:10px; padding-top:2px; }
+.textbg { background:url(../images/left_title_bg.gif) repeat-x left; border-left:#acd0e0 1px solid; border-right:#acd0e0 1px solid; border-bottom:#acd0e0 1px solid; width:161px; margin-left:1px;margin-bottom:5px;}
+
+.text_01{ padding-left:15px; width:150; margin:2px 4px; font-size:12px; line-height:22px; }
+.text_01 a:link{ font-size:12px;font-weight:bold;color:#333; line-height:22px; text-decoration: none; }
+.text_01 a:visited { font-size:12px;font-weight:bold;color:#333; line-height:22px;text-decoration: none;  }
+.text_01 a:hover{ font-size:12px;font-weight:bold;color:#333; line-height:22px;text-decoration:underline;}
+
+
+.text_03{ margin:2px 0px 2px 8px; background:url(../images/img_left_icon.gif) left center no-repeat ; padding-left:15px; width:150;  }
+.text_03 a:link{ font-size:12px;color:#333; line-height:22px;  text-decoration: none; }
+.text_03 a:visited { font-size:12px;color:#333; line-height:22px;text-decoration: none;  }
+.text_03 a:hover{ font-size:12px;color:#135067; line-height:22px;text-decoration:underline;}
+BODY { 
+SCROLLBAR-FACE-COLOR: #b5deef; 
+
+SCROLLBAR-HIGHLIGHT-COLOR: #DFF0FF;  /*滚动条空白部分的颜色 */
+SCROLLBAR-SHADOW-COLOR: #666666; /*立体滚动条阴影的颜色 */
+SCROLLBAR-3DLIGHT-COLOR: #f1fbfd; /*立体滚动条亮边的颜色*/
+SCROLLBAR-ARROW-COLOR: #777777; /*箭头颜色 */
+SCROLLBAR-TRACK-COLOR: #f6f6f6;  /*底色*/
+SCROLLBAR-DARKSHADOW-COLOR: #006699 /*立体滚动条强阴影的颜色 */
+} 
