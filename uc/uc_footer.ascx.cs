@@ -32,8 +32,8 @@ namespace HuaYimo.uc
 			QQ = SettingManager.GetSettingValue("Contact.QQ");
             
 
-			//this.rpZD.DataSource = NewsTypeService.GetChildTypeByParentId(4);
-           // this.rpZD.DataBind();
+			this.rpZD.DataSource = NewsTypeService.GetChildTypeByParentId(5);
+             this.rpZD.DataBind();
         }
     }
 }

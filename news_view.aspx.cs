@@ -11,7 +11,13 @@ namespace HuaYimo
         {
             if (!IsPostBack)
             {
-                getdata();
+				try{getdata();}
+				catch(Exception d)
+				{
+					Response.Redirect("page404.aspx?e=" + "can't find the record.");
+					
+				}
+               
             }
 
         }
