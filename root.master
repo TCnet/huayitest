@@ -65,7 +65,7 @@
                         <li>
                             <div class="m-t-sm">
                                <a onclick="javascript:addFavorite();" href="#" class="btn btn-link btn-xs"> <i class="fa fa-star-o"></i>&nbsp;收藏</a>
-                                <a href="admin/Default.aspx" class="btn btn-link btn-xs" style="padding: 0 1px 0 0;"><i class="fa fa-user"></i>&nbsp;管理</a>
+                                <a href="admin/index.aspx" class="btn btn-link btn-xs" style="padding: 0 1px 0 0;"><i class="fa fa-user"></i>&nbsp;管理</a>
 
                             </div>
                         </li>

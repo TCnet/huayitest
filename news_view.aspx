@@ -23,13 +23,13 @@
                                 <span class="date"><%#Convert.ToDateTime(Eval("addtime")).ToString("MM/dd/yyyy") %></span>
                             </div>
                             <p>
-                                <%#Eval("img").ToString() == "" ? "" : "<img  src='attachment/Image/" + Eval("img").ToString() + "'  />" %>
+                                <%# Eval("img")==null ? "" : "<img  src='" + Eval("img").ToString() + "'  />" %>
                             </p>
                             <p>
                                 <%#Eval("content") %>
                             </p>
                             <p>
-                                <%#Eval("upfile").ToString() == "" ? "" : "<a  href='attachment/File/" + Eval("upfile").ToString() + "' target='_blank'>" + Eval("title") + "</a>"%>
+                                <%#Eval("upfile")==null ? "" : "<a  href='" + Eval("upfile").ToString() + "' target='_blank'>" + Eval("title") + "</a>"%>
                             </p>
                             <p class="txt_font">
                                 上一篇: <%#NewsService.GetNable(int.Parse( Eval("id").ToString()),int.Parse(Eval("type").ToString()),"news_view.aspx","last","black_link") %><br>

@@ -9,22 +9,22 @@
 //------------------------------------------------------------------------------
 
 namespace HuaYimo {
-    
-    
-    public partial class news_view {
-        
-        protected System.Web.UI.WebControls.Content Content1;
-        
-        protected System.Web.UI.WebControls.Content Content3;
-        
-        protected HuaYimo.uc.uc_menu uc_menu;
-        
-        protected System.Web.UI.WebControls.Content Content2;
-        
-        protected HuaYimo.uc.uc_breadcrumb uc_breadcrumb;
-        
-        protected HuaYimo.uc.uc_leftmenu uc_leftmenu;
-        
-        protected System.Web.UI.WebControls.Repeater rpNews;
-    }
+	
+	
+	public partial class news_view {
+		
+		protected System.Web.UI.WebControls.Content Content1;
+		
+		protected System.Web.UI.WebControls.Content Content3;
+		
+		protected HuaYimo.uc.uc_menu uc_menu;
+		
+		protected System.Web.UI.WebControls.Content Content2;
+		
+		protected HuaYimo.uc.uc_breadcrumb uc_breadcrumb;
+		
+		protected HuaYimo.uc.uc_leftmenu uc_leftmenu;
+		
+		protected System.Web.UI.WebControls.Repeater rpNews;
+	}
 }

@@ -18,7 +18,7 @@ namespace HuaYimo.uc
 
         protected void Page_Load(object sender, EventArgs e)
         {
-			dptype = NewsTypeService.GetChildTypeByParentId(0);
+			dptype = NewsTypeService.GetChildTypeByParentIdDefault(0);
 
             if (!IsPostBack)
             {

@@ -9,7 +9,7 @@
     <uc_menu:uc_menu ID="uc_menu" runat="server"></uc_menu:uc_menu>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="main" runat="server">
-    <uc_breadcrumb:uc_breadcrumb ID="uc_breadcrumb" runat="server" Title=""></uc_breadcrumb:uc_breadcrumb>
+    <uc_breadcrumb:uc_breadcrumb ID="uc_breadcrumb" runat="server" ></uc_breadcrumb:uc_breadcrumb>
     <div class="container">
         <div class="row ">
             <uc_leftmenu:uc_leftmenu ID="uc_leftmenu" runat="server" />
@@ -25,7 +25,7 @@
                         <ItemTemplate>
                             <div class="col-sm-3 col-xs-6 pro-item">
                                 <a href="news_view.aspx?id=<%#Eval("id") %>" target="_blank">
-                                    <img src="/attachment/Image/<%#Eval("img").ToString() %>" /></a>
+                                    <img src="<%#Eval("img").ToString() %>" /></a>
                                 <p class="pro-text1">
                                     <a href="news_view.aspx?id=<%#Eval("id") %>" target="_blank" class="black_link">
                                         <%#Eval("title").ToString() %></a>

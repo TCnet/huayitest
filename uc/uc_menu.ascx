@@ -7,7 +7,7 @@
                                 </li>
                                 <% for (int i = 0; i < dptype.Count; i++)
                                    { %>
-                                <% dctype = NewsTypeService.GetChildTypeByParentId(dptype[i].id); %>
+                                <% dctype = NewsTypeService.GetChildTypeByParentIdDefault(dptype[i].id); %>
                                 <% if (dctype.Count > 0)
                                    { %>
                                    <li id='menu_<%=dptype[i].id%>' class="dropdown ">
