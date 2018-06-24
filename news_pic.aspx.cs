@@ -4,6 +4,7 @@ using System.Web.UI;
 using HuaYimo.Controls;
 using System.Web.UI.WebControls;
 using TCSolutions.TCweb.Common.Utils;
+using TCSolutions.TCweb.BusinessLogic.Content.News;
 namespace HuaYimo
 {
 	public partial class news_pic : BaseTCwebFrontendPage
@@ -19,7 +20,11 @@ namespace HuaYimo
         public void getdata()
         {
             int type = gettype();
+			//Response.Write(type);
+			//Response.End();
+			//NewsType newsob = NewsTypeService.GetNewsTypeById(type);
 			title = NewsTypeService.GetTypeName(type);
+			//title =
 			this.uc_breadcrumb.Title = title;
             this.rpNewslist.DataSource = pds();
             this.rpNewslist.DataBind();
@@ -36,7 +41,7 @@ namespace HuaYimo
                 Label lbpagetotal = (Label)e.Item.FindControl("lbpagetotal");
 
                 Label lbpagenow = (Label)e.Item.FindControl("lbpagenow");
-
+                
                 Label lbnumber = (Label)e.Item.FindControl("lbnumber");
                 Label lbnumbertotal = (Label)e.Item.FindControl("lbnumbertotal");
                 Label lbGid = (Label)e.Item.FindControl("lbGid");
@@ -88,20 +93,28 @@ namespace HuaYimo
         public int gettype()
         {
             int type = 11;
-            if (Request["type"] != null)
-            {
-				int pid = NewsTypeService.GetPid(int.Parse(Request["type"]));
-                if (pid == 0)//是父类
+			try{
+				
+				if (Request["type"] != null)
                 {
+                    int pid = NewsTypeService.GetPid(int.Parse(Request["type"]));
+                    if (pid == 0)//是父类
+                    {
 
-					type = NewsTypeService.GetTypeidByPid(int.Parse(Request["type"])); 
+                        type = NewsTypeService.GetTypeidByPid(int.Parse(Request["type"]));
 
+                    }
+                    else
+                    {
+                        type = int.Parse(Request["type"]);
+                    }
                 }
-                else
-                {
-                    type = int.Parse(Request["type"]);
-                }
-            }
+				
+			}catch(Exception e)
+			{
+				Response.Redirect("page404.aspx?e="+"错误参数");
+			}
+            
             return type;
 
         }

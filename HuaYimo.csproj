@@ -1352,6 +1352,7 @@
     <Content Include="admin\news_audit.aspx" />
     <Content Include="admin\news_recyle.aspx" />
     <Content Include="admin\logout.aspx" />
+    <Content Include="page404.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -1601,6 +1602,12 @@
     </Compile>
     <Compile Include="admin\logout.aspx.designer.cs">
       <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page404.aspx.cs">
+      <DependentUpon>page404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="page404.aspx.designer.cs">
+      <DependentUpon>page404.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

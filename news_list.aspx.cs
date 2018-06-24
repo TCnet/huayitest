@@ -136,28 +136,37 @@ namespace HuaYimo
             return v;
         }
 
-        public int gettype()
+		public int gettype()
         {
             int type = 11;
-            if (Request["type"] != null)
+            try
             {
-				
-				int pid = NewsTypeService.GetPid(int.Parse(Request["type"]));
-                if (pid == 0)//是父类
-                {
-					//type = NewsTypeService.GetChildTypeByParentId(int.Parse(Request["type"]))[0].id;
-					type = NewsTypeService.GetTypeidByPid(int.Parse(Request["type"]));
-                   // type = Convert.ToInt32(LJH.NewsType.ExecuteScalar(string.Format("select top 1 id from tNewsType where p_id={0}", int.Parse(Request["type"]))));
 
-                }
-                else
+                if (Request["type"] != null)
                 {
-                    type = int.Parse(Request["type"]);
+                    int pid = NewsTypeService.GetPid(int.Parse(Request["type"]));
+                    if (pid == 0)//是父类
+                    {
+
+                        type = NewsTypeService.GetTypeidByPid(int.Parse(Request["type"]));
+
+                    }
+                    else
+                    {
+                        type = int.Parse(Request["type"]);
+                    }
                 }
+
             }
+            catch (Exception e)
+            {
+                Response.Redirect("page404.aspx?e=" + "错误参数");
+            }
+
             return type;
 
         }
+
 
         public string geturl(string id, string title)
         {
