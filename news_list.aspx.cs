@@ -160,7 +160,7 @@ namespace HuaYimo
             }
             catch (Exception e)
             {
-                Response.Redirect("page404.aspx?e=" + "错误参数");
+                Response.Redirect("page404.aspx?e=" + "error type");
             }
 
             return type;
