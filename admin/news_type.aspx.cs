@@ -95,7 +95,7 @@ namespace HuaYimo.admin
                 if (Request["isdefault"] != null && Request["eid"] != null)
                 {
 					bool isdefault = Request["isdefault"] == "0" ? false : true;
-					NewsTypeService.SetIsDefault(isdefault,int.Parse(Request["isdefault"]));
+					NewsTypeService.SetIsDefault(isdefault,int.Parse(Request["eid"]));
                    
                     Response.Redirect(Request.UrlReferrer.ToString());
                 }
@@ -103,11 +103,12 @@ namespace HuaYimo.admin
             Bind();
 
         }
-
-        protected string FlagNews(string id, string a)
+        
+		protected string FlagNews(string id, bool s)
         {
 
-            if (a == "1")
+            
+            if (s==true)
                 return "<a href=news_type.aspx?isdefault=0&eid=" + id + getcanshu() + "><font color=red>取消显示</font></a> |";
             else
                 return "<a href=news_type.aspx?isdefault=1&eid=" + id + getcanshu() + ">首页显示</a> |";

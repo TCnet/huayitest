@@ -122,14 +122,14 @@ width="*" height=23><asp:TextBox ID="tbTitle" runat="server" Width="250px" CssCl
          <asp:TemplateField HeaderText="首页显示">
         <ItemStyle Width="6%" />
         <ItemTemplate>
-        <%# Eval("isdefault").ToString() == "1" ?"<font color=green><strong>√</strong></font>":"<font color=red><strong>×</strong></font>" %>
+        <%# Convert.ToBoolean(Eval("isdefault")) == true ?"<font color=green><strong>√</strong></font>":"<font color=red><strong>×</strong></font>" %>
         </ItemTemplate>
         </asp:TemplateField>
        
         <asp:TemplateField HeaderText="操作">
             <ItemStyle Width="20%" HorizontalAlign=Center />
             <ItemTemplate>
-            <%#FlagNews(Eval("id").ToString(),Eval("isdefault").ToString()) %>
+            <%#FlagNews(Eval("id").ToString(),Convert.ToBoolean(Eval("isdefault"))) %>
             <a href="news_type.aspx?id=<%# Eval("id") %>">添加下级分类</a> | <a href="news_type.aspx?edit=<%# Eval("id") %>">修改</a> | <a href="javascript:DeleteIt(<%# Eval("id") %>)">删除</a>
             </ItemTemplate>
         </asp:TemplateField>
